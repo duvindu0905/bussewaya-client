@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commuter Service</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+  <h1>Commuter Service</h1>
+
+  <!-- Create a New Commuter Form -->
+  <div id="commuterForm">
+    <h2>Enter Commuter Details</h2>
+    <input type="text" id="commuterId" placeholder="Commuter ID" required><br>
+    <input type="text" id="commuterName" placeholder="Commuter Name" required><br>
+    <input type="email" id="commuterEmail" placeholder="Commuter Email" required><br>
+    <input type="text" id="nic" placeholder="NIC" required><br>
+    <input type="text" id="mobileNumber" placeholder="Mobile Number" required><br>
+    <button id="createCommuterBtn">Create Commuter</button>
+  </div>
+
+  <!-- Fetch All Commuters -->
+  <div>
+    <h2>Get All Commuters</h2>
+    <button id="getAllCommutersBtn">Get All Commuters</button>
+  </div>
+
+  <!-- Get Commuter by ID -->
+  <div>
+    <h2>Get Commuter by ID</h2>
+    <input type="text" id="commuterIdInput" placeholder="Enter Commuter ID">
+    <button id="getCommuterByIdBtn">Get Commuter</button>
+  </div>
+
+  <!-- Message Section -->
+  <div id="message"></div>
+
+  <!-- Display Commuters -->
+  <div id="commuterList"></div>
+
+  <script src="../../services/commuter-service/js/app.js"></script>
+</body>
+</html>

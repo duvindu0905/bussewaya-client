@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Service</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <h1>Welcome to Bussewaya Booking Service</h1>
+
+  <!-- Create a New Booking -->
+  <div id="addBookingForm">
+    <h2>Create a New Booking</h2>
+    <input type="text" id="bookingId" placeholder="Booking ID" required><br>
+    <input type="text" id="commuterId" placeholder="Commuter ID" required><br>
+    <input type="text" id="commuterName" placeholder="Commuter Name" required><br>
+    <input type="email" id="commuterEmail" placeholder="Commuter Email" required><br>
+    <input type="text" id="nic" placeholder="NIC" required><br>
+    <input type="text" id="mobileNumber" placeholder="Mobile Number" required><br>
+    <input type="text" id="seatNumber" placeholder="Seat Number" required><br>
+    <select id="routeNumber" required>
+      <option value="">Select Route</option>
+    </select><br>
+    <select id="scheduleId" required>
+      <option value="">Select Schedule</option>
+    </select><br>
+    <select id="permitNumber" required>
+      <option value="">Select Permit</option>
+    </select><br>
+    <!-- Replace the tripId dropdown with a manual input field -->
+    <input type="text" id="tripId" placeholder="Enter Trip ID" required><br>  
+    <button id="addBookingBtn">Create Booking</button>
+  </div>
+
+  <!-- Get All Bookings -->
+  <div>
+    <h2>Get All Bookings</h2>
+    <button id="getAllBookingsBtn">Get All Bookings</button>
+  </div>
+
+  <!-- Get Bookings by Trip ID -->
+  <div>
+    <h2>Get Bookings by Trip ID</h2>
+    <input type="text" id="tripIdInput" placeholder="Enter Trip ID">
+    <button id="getBookingsByTripIdBtn">Get Bookings</button>
+  </div>
+
+  <!-- Get Booking by NIC -->
+  <div>
+    <h2>Get Booking by NIC</h2>
+    <input type="text" id="nicInput" placeholder="Enter NIC">
+    <button id="getBookingByNicBtn">Get Booking</button>
+  </div>
+
+  <!-- Update Payment Status and Confirm Seat -->
+  <div>
+    <h2>Update Payment Status and Confirm Seat</h2>
+    <input type="text" id="bookingIdForPayment" placeholder="Enter Booking ID">
+    <button id="updatePaymentBtn">Update Payment Status</button>
+  </div>
+
+  <!-- Bookings Cards Section -->
+  <div id="results" class="booking-cards-container"></div>
+
+  <script src="../../services/booking-service/js/app.js"></script>
+</body>
+</html>
