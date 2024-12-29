@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permit Service</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <h1>Welcome to Bussewaya Permit Service</h1>
+
+  <!-- Permit Service UI -->
+  <div id="permitServiceUI" style="display:block;">
+    <h2>Permit Service</h2>
+
+    <!-- Get All Permits Button -->
+    <button id="getAllPermitsBtn">Get All Permits</button>
+
+    <!-- Input to Get Permit by Permit Number -->
+    <div>
+      <input type="text" id="permitNumberInput" placeholder="Enter Permit Number">
+      <button id="getPermitByNumberBtn">Get Permit by Permit Number</button>
+    </div>
+
+    <!-- Add New Permit -->
+    <div>
+      <h3>Add New Permit</h3>
+      <input type="text" id="permitId" placeholder="Permit ID" required><br>
+      <input type="text" id="permitNumber" placeholder="Permit Number" required><br>
+      <input type="date" id="expiryAt" placeholder="Expiry Date" required><br>
+      <input type="text" id="vehicleNumber" placeholder="Vehicle Number" required><br>
+
+      <!-- Route Dropdown -->
+      <select id="routeNumber" required>
+        <option value="">Select Route Number</option>
+      </select><br>
+      
+      <input type="text" id="busOwner" placeholder="Bus Owner" required><br>
+      <input type="text" id="busType" placeholder="Bus Type" required><br>
+      <input type="number" id="numberCapacity" placeholder="Capacity" required><br>
+      <input type="number" id="pricePerSeat" placeholder="Price per Seat" required><br>
+      
+      <label>Music:
+        <input type="checkbox" id="music">
+      </label><br>
+
+      <label>AC:
+        <input type="checkbox" id="ac">
+      </label><br>
+
+      <button id="addPermitBtn">Save New Permit</button>
+    </div>
+
+    <!-- Delete Permit -->
+    <div>
+      <input type="text" id="deletePermitNumber" placeholder="Enter Permit Number to Delete">
+      <button id="deletePermitBtn">Delete Permit</button>
+    </div>
+
+    <!-- Permit Table -->
+    <div id="results">
+      <table id="permitsTable">
+        <thead>
+          <tr>
+            <th>Permit ID</th>
+            <th>Permit Number</th>
+            <th>Expiry Date</th>
+            <th>Vehicle Number</th>
+            <th>Route Name</th>
+            <th>Bus Owner</th>
+            <th>Bus Type</th>
+            <th>Capacity</th>
+            <th>Price per Seat</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="permitsTableBody">
+          <!-- Table rows will be populated dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="../../services/permit-service/js/app.js"></script> <!-- Correct path to app.js -->
+</body>
+</html>
+

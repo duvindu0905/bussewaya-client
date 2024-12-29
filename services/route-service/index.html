@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Route Service</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <h1>Welcome to Bussewaya Service</h1>
+
+  <!-- Route Service UI -->
+  <div id="routeServiceUI" style="display:block;">
+    <h2>Route Service</h2>
+
+    <!-- Get All Routes Button -->
+    <button id="getRouteBtn">Get All Routes</button>
+    
+    <!-- Input to Get Route by Route Number -->
+    <div>
+      <input type="text" id="routeNumberInput" placeholder="Enter Route Number">
+      <button id="getRouteByNumberBtn">Get Route by Route Number</button>
+    </div>
+    
+    <!-- Add New Route -->
+    <div>
+      <h3>Add New Route</h3>
+      <input type="text" id="routeId" placeholder="Route ID">
+      <input type="text" id="routeNumber" placeholder="Route Number">
+      <input type="text" id="routeName" placeholder="Route Name">
+      <input type="text" id="startLocation" placeholder="Start Location">
+      <input type="text" id="endLocation" placeholder="End Location">
+      <input type="text" id="travelDistance" placeholder="Travel Distance">
+      <input type="text" id="travelDuration" placeholder="Travel Duration">
+      <button id="addRouteBtn">Save New Route</button>
+    </div>
+    
+    <!-- Delete Route -->
+    <div>
+      <input type="text" id="deleteRouteNumber" placeholder="Enter Route Number to Delete">
+      <button id="deleteRouteBtn">Delete Route</button>
+    </div>
+
+    <!-- Route Table -->
+    <div id="results">
+      <table id="routesTable">
+        <thead>
+          <tr>
+            <th>Route ID</th>
+            <th>Route Number</th>
+            <th>Route Name</th>
+            <th>Travel Distance</th>
+            <th>Travel Duration</th>
+            <th>Start Location</th>
+            <th>End Location</th>
+          </tr>
+        </thead>
+        <tbody id="routesTableBody">
+          <!-- Table rows will be populated dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="../../services/route-service/js/app.js"></script>
+</body>
+</html>

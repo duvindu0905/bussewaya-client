@@ -1,0 +1,17 @@
+{
+  "name": "bussewaya-client",
+  "version": "1.0.0",
+  "description": "Frontend for Bussewaya service",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "serve": "parcel serve index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

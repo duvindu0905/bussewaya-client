@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin: 0;
+    background-color: #1e3a8a; /* Dark Blue background */
+    color: #fff;
+  }
+  
+  /* Main Title */
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #00bcd4; /* Cyan for title */
+    margin-bottom: 20px;
+  }
+  
+  /* Section Title */
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #00bcd4; /* Cyan for section titles */
+    margin-bottom: 30px;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 12px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Primary Button - Light Blue */
+  button.primaryBtn {
+    background-color: #00bcd4;
+  }
+  
+  button.primaryBtn:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+  }
+  
+  /* Secondary Button - Light Green */
+  button.secondaryBtn {
+    background-color: #4CAF50;
+  }
+  
+  button.secondaryBtn:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Table Header Styling */
+  table th {
+    background-color: #1e3a8a; /* Dark blue header */
+    color: white;
+    font-size: 18px;
+  }
+  
+  table tr:hover {
+    background-color: #2c5282; /* Darker blue for hover effect */
+  }
+  
+  /* Input Fields Styling */
+  input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 20px);
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #00bcd4;
+  }
+  
+  /* Hover effects */
+  button:hover {
+    background-color: #64b5f6;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    input[type="text"] {
+      width: 100%;
+      margin-right: 0;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  
+  
