@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Service</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <h1>Welcome to Bussewaya Trip Service</h1>
+
+  <!-- Create New Trip -->
+  <div id="addTripForm">
+    <h2>Create a New Trip</h2>
+    <input type="text" id="tripId" placeholder="Trip ID" required><br>
+    <input type="text" id="tripNumber" placeholder="Trip Number" required><br>
+    <input type="date" id="tripDate" required><br>
+
+    <!-- Route Number Dropdown -->
+    <select id="routeNumber" required>
+      <option value="">Select Route</option>
+    </select><br>
+
+    <!-- Schedule ID Dropdown -->
+    <select id="scheduleId" required>
+      <option value="">Select Schedule</option>
+    </select><br>
+
+    <!-- Permit Number Dropdown -->
+    <select id="permitNumber" required>
+      <option value="">Select Permit</option>
+    </select><br>
+
+    <select id="bookingStatus" required>
+      <option value="Available">Available</option>
+      <option value="Sold Out">Sold Out</option>
+      <option value="Pending">Pending</option>
+    </select><br>
+    <button id="addTripBtn">Create Trip</button>
+  </div>
+
+  <!-- Get Trip by ID -->
+  <div>
+    <h2>Get Trip by ID</h2>
+    <input type="text" id="tripIdInput" placeholder="Enter Trip ID">
+    <button id="getTripByIdBtn">Get Trip by Trip ID</button>
+  </div>
+
+  <!-- Get Trips by Location and Date -->
+  <div>
+    <h2>Get Trips by Location and Date</h2>
+    <input type="text" id="startLocation" placeholder="Start Location">
+    <input type="text" id="endLocation" placeholder="End Location">
+    <input type="date" id="tripDateLocation" required><br>
+    <button id="getTripsByLocationAndDateBtn">Get Trips</button>
+  </div>
+
+  <!-- Get Trips by Schedule ID and Date -->
+  <div>
+    <h2>Get Trips by Schedule ID and Date</h2>
+    <input type="text" id="scheduleIdDate" placeholder="Schedule ID">
+    <input type="date" id="tripDateSchedule" required><br>
+    <button id="getTripsByScheduleAndDateBtn">Get Trips</button>
+  </div>
+
+  <!-- Delete Trip -->
+  <div>
+    <h2>Delete Trip</h2>
+    <input type="text" id="deleteTripId" placeholder="Enter Trip ID">
+    <button id="deleteTripBtn">Delete Trip</button>
+  </div>
+
+  <!-- Trip Cards Section -->
+  <div id="results" class="trip-cards-container">
+    <!-- Cards will be populated dynamically here -->
+  </div>
+
+  <script src="../../services/trip-service/js/app.js"></script>
+</body>
+</html>

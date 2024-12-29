@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Service</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <h1>Welcome to Bussewaya Schedule Service</h1>
+
+  <!-- Schedule Service UI -->
+  <div id="scheduleServiceUI" style="display:block;">
+    <h2>Schedule Service</h2>
+
+    <!-- Get All Schedules Button -->
+    <button id="getAllSchedulesBtn">Get All Schedules</button>
+
+    <!-- Input to Get Schedule by Schedule ID -->
+    <div>
+      <input type="text" id="scheduleIdInput" placeholder="Enter Schedule ID">
+      <button id="getScheduleByIdBtn">Get Schedule by Schedule ID</button>
+    </div>
+
+    <!-- Add New Schedule Form -->
+    <div>
+      <h3>Add New Schedule</h3>
+      <input type="text" id="scheduleId" placeholder="Schedule ID" required><br>
+      <input type="text" id="departureTime" placeholder="Departure Time" required><br>
+      <input type="text" id="arrivalTime" placeholder="Arrival Time" required><br>
+
+      <!-- Route Dropdown -->
+      <select id="routeNumber" required>
+        <option value="">Select Route Number</option>
+      </select><br>
+
+      <!-- Permit Dropdown -->
+      <select id="permitNumber" required>
+        <option value="">Select Permit Number</option>
+      </select><br>
+
+      <button id="addScheduleBtn">Save New Schedule</button>
+    </div>
+
+    <!-- Schedule Table -->
+    <div id="results">
+      <table id="schedulesTable">
+        <thead>
+          <tr>
+            <th>Schedule ID</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Route Number</th>
+            <th>Permit Number</th>
+            <th>Start Location</th>
+            <th>End Location</th>
+            <th>Route Name</th>
+            <th>Vehicle Number</th>
+            <th>Created At</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="schedulesTableBody">
+          <!-- Table rows will be populated dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="../../services/schedule-service/js/app.js"></script> <!-- Correct path to app.js -->
+</body>
+</html>
