@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operator Service</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+  <h1>Welcome to Operator Service</h1>
+
+  <!-- Form to create a new operator -->
+  <form id="createOperatorForm">
+    <h2>Create a New Operator</h2>
+    <input type="number" id="operatorId" placeholder="Operator ID" required><br>
+    <input type="text" id="userName" placeholder="Username" required><br>
+    <input type="password" id="passWord" placeholder="Password" required><br>
+    <input type="text" id="fullName" placeholder="Full Name" required><br>
+    <input type="text" id="address" placeholder="Address" required><br>
+    <input type="text" id="phoneNumber" placeholder="Phone Number" required><br>
+    <input type="text" id="nic" placeholder="NIC" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <button type="button" id="createOperatorBtn">Create Operator</button>
+  </form>
+
+  <!-- Fetch All Operators -->
+  <div>
+    <h2>Get All Operators</h2>
+    <button id="getAllOperatorsBtn">Get All Operators</button>
+  </div>
+
+  <!-- Get Operator by ID -->
+  <div>
+    <h2>Get Operator by ID</h2>
+    <input type="text" id="operatorIdInput" placeholder="Enter Operator ID">
+    <button id="getOperatorByIdBtn">Get Operator</button>
+  </div>
+
+  <!-- Update Operator -->
+  <div>
+    <h2>Update Operator</h2>
+    <input type="text" id="updateOperatorId" placeholder="Operator ID">
+    <input type="text" id="updateFullName" placeholder="Full Name">
+    <input type="text" id="updateAddress" placeholder="Address">
+    <input type="text" id="updatePhoneNumber" placeholder="Phone Number">
+    <button id="updateOperatorBtn">Update Operator</button>
+  </div>
+
+  <!-- Delete Operator -->
+  <div>
+    <h2>Delete Operator</h2>
+    <input type="text" id="deleteOperatorId" placeholder="Enter Operator ID">
+    <button id="deleteOperatorBtn">Delete Operator</button>
+  </div>
+
+  <!-- Display Operators or Operator Details -->
+  <div id="operatorDetails"></div>
+
+  <script src="../../services/operator-service/js/app.js"></script>
+</body>
+</html>

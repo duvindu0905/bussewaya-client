@@ -14,7 +14,7 @@ document.getElementById('createCommuterBtn').addEventListener('click', () => {
     }
 
     // Send the commuter data to the backend
-    fetch('https://your-backend-url/commuter-service/commuters', {
+    fetch('https://commuter-service-193893744076.us-central1.run.app/commuter-service/commuters', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(commuterData),
@@ -35,7 +35,7 @@ document.getElementById('createCommuterBtn').addEventListener('click', () => {
 
 // Handle getting all commuters
 document.getElementById('getAllCommutersBtn').addEventListener('click', () => {
-    fetch('https://your-backend-url/commuter-service/commuters')
+    fetch('https://commuter-service-193893744076.us-central1.run.app/commuter-service/commuters')
         .then(response => response.json())
         .then(commuters => {
             const commuterList = document.getElementById('commuterList');
@@ -73,7 +73,7 @@ document.getElementById('getCommuterByIdBtn').addEventListener('click', () => {
         return;
     }
 
-    fetch(`https://your-backend-url/commuter-service/commuters/${commuterId}`)
+    fetch(`https://commuter-service-193893744076.us-central1.run.app/commuter-service/commuters/${commuterId}`)
         .then(response => response.json())
         .then(commuter => {
             const commuterList = document.getElementById('commuterList');

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTC Admin Service</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+  <h1>Welcome to NTC Admin Service</h1>
+
+  <!-- Form to search NTC Admin by ID -->
+  <div>
+    <h2>Search NTC Admin by ID</h2>
+    <input type="text" id="ntcadminIdInput" placeholder="Enter NTC Admin ID">
+    <button id="getNtcadminByIdBtn">Get NTC Admin</button>
+  </div>
+
+  <!-- Fetch All NTC Admins -->
+  <div>
+    <h2>Get All NTC Admins</h2>
+    <button id="getAllNtcadminsBtn">Get All NTC Admins</button>
+  </div>
+
+  <!-- Section to display NTC Admin details or list -->
+  <div id="ntcadminDetails"></div>
+
+  <!-- Message Section -->
+  <div id="message"></div>
+
+  <script src="../../services/ntcadmin-service/js/app.js"></script>
+</body>
+</html>
